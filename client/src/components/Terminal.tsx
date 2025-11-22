@@ -76,7 +76,7 @@ const fileSystem: FileSystem = {
   '/.hidden': { type: 'directory', children: ['flag.txt'] },
   '/.hidden/flag.txt': { 
     type: 'file', 
-    content: 'https://dankerman.bandcamp.com/album/chron-4' 
+    content: 'aHh4cHMlNUIlM0ElMkYlMkYlNURkYW5rZXJtYW4lNUIlMkUlNURiYW5kY2FtcCU1QiUyRSU1RGNvbSUyRmFsYnVtJTJGY2hyb24lMkQ0' 
   },
   '/resume.txt': { type: 'file', content: RESUME_CONTENT },
   '/README.md': { 
