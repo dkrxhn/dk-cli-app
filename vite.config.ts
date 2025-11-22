@@ -22,8 +22,8 @@ export default defineConfig({
   },
 
   build: {
-    // Build into dist/client so the server can serve it
-    outDir: path.resolve(__dirname, "dist", "client"),
+    // IMPORTANT: match what the server expects: dist/public
+    outDir: path.resolve(__dirname, "dist", "public"),
     emptyOutDir: true,
   },
 
