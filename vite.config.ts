@@ -19,6 +19,10 @@ export default defineConfig({
         ]
       : []),
   ],
+
+  // Your source lives in client/
+  root: path.resolve(import.meta.dirname, "client"),
+
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
@@ -26,11 +30,13 @@ export default defineConfig({
       "@assets": path.resolve(import.meta.dirname, "attached_assets"),
     },
   },
-  root: path.resolve(import.meta.dirname, "client"),
+
   build: {
-    outDir: path.resolve(import.meta.dirname, "dist/public"),
+    // IMPORTANT: build frontend into dist/client (so your Express server can serve it)
+    outDir: path.resolve(import.meta.dirname, "dist/client"),
     emptyOutDir: true,
   },
+
   server: {
     fs: {
       strict: true,
